@@ -4,7 +4,7 @@ using namespace std;
 bool binarySearchReacursive(int* array, int startIndex, int lastIndex, int element)
 {  int mid=0;
   if(startIndex<=lastIndex)
-  { mid=(startIndex+lastIndex-1)/2;
+  { mid=(startIndex+lastIndex)/2;
 	if(array[mid]==element)
 	return true;
 	else if (array[mid]<element)
@@ -19,7 +19,7 @@ bool binarySearchIterative(int* array, int startIndex, int lastIndex, int elemen
 {  int mid=0; int k=0;
   while(startIndex<=lastIndex)
   {
-  	mid=(startIndex+lastIndex-1)/2;
+  	mid=(startIndex+lastIndex)/2;
   	if(array[mid]==element)
   	{
   		k=1;
